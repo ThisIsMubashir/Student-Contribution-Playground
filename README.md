@@ -1,4 +1,5 @@
 # Student-Contribution-Playground
+
 A simple C library containing small utility functions (string, math, file helpers). Students will add new functions, fix bugs, improve documentation, and follow real contribution rules.
 
 Student will learn how to:
@@ -25,5 +26,35 @@ Students will contribute by fixing bugs, adding functions, writing documentation
 ## 📦 Build Instructions
 
 ```bash
-gcc src/cutility.c src/fileutils.c examples/demo.c -I include -o demo
-./demo
+gcc src/cutility.c src/fileutils.c examples/demo.c -I include -o demo ./demo
+```
+
+## 🤝 Contributing
+
+Before contributing, please read:
+
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+- [Pull Request Guidelines](PULL_REQUEST_GUIDELINES.md)
+
+
+## 📚 Example Usage
+
+```c
+#include "cutility.h"
+#include <stdio.h>
+
+int main() {
+    printf("Uppercase: %s\n", to_uppercase("hello"));
+    printf("Square: %d\n", square(5));
+    return 0;
+}
+```
+
+## 🧪 Running Tests
+
+```
+gcc src/cutility.c test/test_runner.c -I include -o tests ./tests
+```
+## 👥 Contributors
+
+See contributions in pull requests.
