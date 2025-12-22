@@ -27,6 +27,32 @@ int square(int n) {
 }
 
 // TODO: Student implementation (factorial)
-int factorial(int n) {
-    return -1;
+unsigned long int factorial(int n)
+{
+	// filter: can use filter
+	if(n < 0)
+	{
+		return -1;	// return with -1, can be handling in entry point function
+	}
+
+	// updater: prefer using an updater
+	// if(n < 0)
+	// {
+	// 	n = -n;
+	// }
+
+	unsigned long int iFact = 1;	// since factorial can't be -ve number
+									// can be used to store larger numbers
+									// can use long long int as well
+									// for storing larger numbers
+									// for 32 bit max is 12!
+									// for 64 bit max is ~ 20!
+	int iCnt = 0;
+
+	for(iCnt = n; iCnt > 0; iCnt--)
+	{
+		iFact = iFact * iCnt;
+	}
+	
+    return iFact;
 }

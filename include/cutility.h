@@ -7,7 +7,7 @@ char* reverse_string(const char* str); // TODO for students
 
 // MATH UTILITIES
 int square(int n);
-int factorial(int n); // TODO for students
+unsigned long int factorial(int n); // TODO for students
 
 // FILE UTILITIES (implemented in fileutils.c)
 int count_lines(const char* file_path); // TODO improve error handling
